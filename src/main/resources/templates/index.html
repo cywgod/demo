@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <p>hello</p><br>
+       <p th:text="${session.hello}"></p>
+        <table>
+       <tr th:each="u:${session.hello}">
+           <td th:text="${u.username}"></td>
+           <td th:text="${u.password}"></td>
+       </tr>
+        </table>
+
+<!--<?php-->
+<!--echo "Hello World!";-->
+<!--?>-->
+</body>
+</html>
